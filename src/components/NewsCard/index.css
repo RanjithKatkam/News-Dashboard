@@ -1,0 +1,67 @@
+.card-main-container {
+    width: 65%;
+    height: 250px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(222, 222, 222); */
+    padding: 8px;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset
+}
+
+.image-container {
+    width: 28%;
+    height: 100%;
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+}
+
+.description-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 19px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    width: 85%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.publishedTime {
+    font-size: 14px;
+    font-family: "Roboto";
+    margin-top: 1px;
+    font-style: italic;
+    color: grey;
+}
+
+.description {
+    font-size: 17px;
+    width: 93%;
+    margin-top: 4px;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #6e6d6d;
+    overflow: hidden;
+}
+
+.read-more {
+    color: rgb(96, 92, 92);
+    text-decoration: none;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: 4px;
+    font-weight: 600;
+}

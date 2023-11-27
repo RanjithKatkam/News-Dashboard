@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Navbar from "./components/Navbar"
+import CategoryBar from "./components/CategoryBar"
+import News from "./components/News"
 
 function App() {
+
+  const [selectedCategory, setCategory] = useState("all")
+
+  const handleCategoryChange = (newCategory) => {
+    setCategory(newCategory)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className='navbar'>
+          <Navbar />
+      </div>
+      <div className='categorybar'>
+          <CategoryBar selectedCategory={selectedCategory} handleCategoryChange={handleCategoryChange} />
+      </div>
+      <div className='news'>
+          <News selectedCategory={selectedCategory} />
+      </div>
     </div>
   );
 }
